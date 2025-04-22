@@ -7,3 +7,17 @@
 .text-primary {
     color: #e72636;
 }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+
+}
+
+section {
+    width: 40%;
+    height: 200px;
+    border: 1px solid #e72636;
+}
