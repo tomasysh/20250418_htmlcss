@@ -26,6 +26,10 @@
     .movie-item {
         width: 45%;
         height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .item1 {
         order: 1;
