@@ -4,94 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>湯馬士黃的履歷</title>
-    <style>
-      .highlight {
-        /* color: var(--primary-color); */
-        outline: 3px solid gold;
-        background-color: yellow;
-      }
-    </style>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="resume.css" />
   </head>
   <body>
-    <!-- <h1>CSS 選擇器 Highlighter</h1>
-    <p>請輸入 CSS 選擇器：</p>
-    <input type="text" id="selector" />
-    <button type="button" onclick="doHighlight()">送出</button>
-    <hr> -->
+<main>
 
-    <h1>履歷表</h1>
+  <h1>履歷表</h1>
+  
+  <section>
+    <h2 class="text-primary">湯馬士黃</h2>
+    <p>前端工程師，企業開發顧問，保險業務員。</p>
+    <dl>
+      <dt>Blog</dt>
+      <dd>https://carrefourisme.com/</dd>
+      <dt>Thread</dt>
+      <dd>https://www.threads.net/@tomasysh</dd>
+      <dt>Email</dt>
+      <dd>tomasysh@gmail.com</dd>
+    </dl>
+  </section>
+  
+  <article class="biography">
+    <header>
+      <h2 class="text-primary">關於我</h2>
+      <p>縱橫台北八條通的那些事兒</p>
+    </header>
+    <p>
+      Hi, 我是湯馬士黃。我喜歡使用數位工具來幫助學生，我擅長
+      Heptabase、Notion，並在數位軟體中實踐卡片盒筆記法。
+    </p>
+    <aside>為者常成，行者常至</aside>
+  </article>
+  
+  <section>
+    <h2 class="text-primary">專長</h2>
+    <ul>
+      <li>網頁開發／顧問</li>
+      <li>高中／大學研習業師</li>
+      <li>數位筆記工作流</li>
+    </ul>
+  </section>
+  
+  <section>
+    <h2 class="text-primary">工作經驗</h2>
+    <ol reversed>
+      <li>前端工程師 資訊公司 7</li>
+      <li>企畫 資訊公司 3</li>
+      <li>水泥預拌員 工地 0.5</li>
+      <li>企畫 遊樂園區 2</li>
+    </ol>
+  </section>
+  
+  <footer>
+    <address>
+      台灣台北市<br />
+      永春捷運站3.5坪小套房
+    </address>
+  </footer>
+</main>
 
-    <section>
-      <h2 class="text-primary">湯馬士黃</h2>
-      <p>前端工程師，企業開發顧問，保險業務員。</p>
-      <dl>
-        <dt>Blog</dt>
-        <dd>https://carrefourisme.com/</dd>
-        <dt>Thread</dt>
-        <dd>https://www.threads.net/@tomasysh</dd>
-        <dt>Email</dt>
-        <dd>tomasysh@gmail.com</dd>
-      </dl>
-    </section>
 
-    <article class="biography">
-      <header>
-        <h2 class="text-primary">關於我</h2>
-        <p>縱橫台北八條通的那些事兒</p>
-      </header>
-      <p>
-        Hi, 我是湯馬士黃。我喜歡使用數位工具來幫助學生，我擅長
-        Heptabase、Notion，並在數位軟體中實踐卡片盒筆記法。
-      </p>
-      <aside>為者常成，行者常至</aside>
-    </article>
-
-    <section>
-      <h2 class="text-primary">專長</h2>
-      <ul>
-        <li>網頁開發／顧問</li>
-        <li>高中／大學研習業師</li>
-        <li>數位筆記工作流</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 class="text-primary">工作經驗</h2>
-      <ol reversed>
-        <li>前端工程師 資訊公司 7</li>
-        <li>企畫 資訊公司 3</li>
-        <li>水泥預拌員 工地 0.5</li>
-        <li>企畫 遊樂園區 2</li>
-      </ol>
-    </section>
-
-    <footer>
-      <address>
-        台灣台北市<br />
-        永春捷運站3.5坪小套房
-      </address>
-    </footer>
-
-    <script>
-      function doHighlight() {
-        // 清除所有樣式
-        const allElements = document.querySelectorAll(".highlight");
-        console.log('allElements 有幾個？', allElements.length);
-        allElements.forEach((element) => {
-          element.classList.remove("highlight");
-        });
-
-        // 取得使用者輸入的 CSS 選擇器
-        const selector = document.getElementById("selector").value;
-        console.log('selector 是什麼值？', selector);
-        const elements = document.querySelectorAll(selector);
-        elements.forEach((element) => {
-          element.classList.add("highlight");
-        });
-      }
-    </script>
 
   </body>
 </html>
