@@ -38,7 +38,21 @@
     background-image: url(https://www.vscinemas.com.tw/upload/film/film_20250402032.jpg);
 }
 
+@media (max-width: 1024px) {
+    main#desktop {
+        display: none;
+    }
+}
+
 @media (min-width: 1025px) {
+    main#mobile {
+        display: none;
+    }
+    
+    main#desktop {
+        display: block;
+    }
+
     .movie__item {
         width: 45%;
         height: 200px;
