@@ -1,0 +1,15 @@
+.header__container {
+    display: flex;
+    background-color: lightcoral;
+    padding: 8px;
+}
+
+.header__search-container {
+    flex-grow: 1;
+    display: flex;
+}
+
+.header__search-input {
+    flex-grow: 1;
+}
+
