@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="guideline.css">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
   
@@ -45,7 +47,11 @@
   </main>
 
   <main class="movie__container" id="desktop">
-    <section class="movie__list">
+    <section class="movie__list" 
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-once="true">
       <div class="movie__item item1 cover">
         <h2>有病才會喜歡你</h2>
       </div>
@@ -59,5 +65,8 @@
     </section>
   </main>
 
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
