@@ -1,3 +1,9 @@
+body {
+    /* 因為使用 AOS 動畫，畫面上的元素會在超出文件範圍的地方預備進場，造成瀏覽器出現水平（橫向）卷軸 */
+    /* 使用水平溢出屬性(overflow-x)，將超出畫面的部分設為隱藏(hidden)解決這個問題 */
+    overflow-x: hidden;
+}
+
 .movie__list {
     display: flex;
     flex-wrap: wrap;
